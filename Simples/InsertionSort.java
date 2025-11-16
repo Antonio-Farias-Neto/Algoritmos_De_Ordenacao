@@ -1,4 +1,4 @@
-public class Insertion {
+public class InsertionSort {
    public static void insertionSort(int[] array) {
     for (int j = 1; j < array.length; j++) {
         int i = j-1;

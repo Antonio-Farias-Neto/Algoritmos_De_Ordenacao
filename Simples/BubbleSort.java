@@ -1,14 +1,16 @@
-public class Bubble {
+public class BubbleSort {
     public static void buubleSort(int[] array) {
         boolean trocou = true;
+        int finalDoArray = array.length - 1;
         while (trocou) {
             trocou = false;
-            for (int i = 1; i < array.length; i++) {
+            for (int i = 1; i < finalDoArray; i++) {
                 if (array[i-1] > array[i]) {
                     trocar(array, i );
                     trocou = true;
                 }
             }
+            finalDoArray--;
         }
     }
 
